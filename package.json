@@ -1,0 +1,26 @@
+{
+  "name": "auth0-id-generator",
+  "version": "0.0.0",
+  "description": "Generates random ids with a prefix (a la Stripe)",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --reporter list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/auth0/id-generator.git"
+  },
+  "keywords": [
+    "ids"
+  ],
+  "author": "Auth0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/auth0/id-generator/issues"
+  },
+  "homepage": "https://github.com/auth0/id-generator",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
