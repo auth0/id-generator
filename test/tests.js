@@ -49,3 +49,16 @@ describe('with one accepted prefix', function () {
     expect(id).to.match(/^cus_[a-zA-Z0-9]{16}$/);
   });
 });
+
+describe('with a non default separator provided', function() {
+  var id_generator;
+  before(function(){
+    id_generator = new IdGenerator(['cus', 'con'], '-');
+  });
+
+  it ('an id should be provided with the new separator', function(){
+    var id = id_generator.new('cus');
+    expect(id).to.have.length(20);
+    expect(id).to.match(/^cus-[a-zA-Z0-9]{16}$/);
+  });
+});
