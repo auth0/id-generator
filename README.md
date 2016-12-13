@@ -29,6 +29,16 @@ console.log(id); // cus_lO1DEQWBbQAACfHO
 generator.new('cli'); // throws
 ```
 
+To get an uid (id with a given length and without prefix):
+```javascript
+var IdGenerator = require('auth0-id-generator');
+
+var generator = new IdGenerator(['cus', 'con']);
+var id = generator.newUid(10);
+
+console.log(id); // lO1DEQWBbQ
+```
+
 ## Issue Reporting
 
 If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
