@@ -1,6 +1,6 @@
 {
   "name": "auth0-id-generator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generates random ids with a prefix (a la Stripe)",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,5 @@
     "chai": "^1.10.0",
     "mocha": "^2.1.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
