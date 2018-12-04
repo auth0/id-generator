@@ -29,7 +29,7 @@ console.log(id); // cus_lO1DEQWBbQAACfHO
 generator.new('cli'); // throws
 ```
 
-To get an uid (id with a given length and without prefix):
+To get a uid (id with a given length and without prefix):
 ```javascript
 var IdGenerator = require('auth0-id-generator');
 
