@@ -39,6 +39,14 @@ var id = generator.newUid(10);
 console.log(id); // lO1DEQWBbQ
 ```
 
+## New API
+Updated api allows more customizations. Uses a new method `.get()`:
+```javascript
+var generator = new IdGenerator({len: 5, alphabet: 'abc123', prefix: 'foo', separator: ':'});
+
+generator.get();  // -> foo:2a2b1
+```
+
 ## Issue Reporting
 
 If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
