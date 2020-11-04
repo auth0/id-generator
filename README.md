@@ -58,3 +58,5 @@ If you have found a bug or if you have a feature request, please report them at 
 ## License
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
+
+Elements of this project contain backported functions from recent node.js libraries, where applicable these are noted.  These functions are licensed using the [NODEJS_LICENSE](NODEJS_LICENSE) file.
