@@ -1,6 +1,6 @@
-const expect = require('chai').expect;
-const { assert } = require('chai');
-const randomInteger = require('../lib/randomInteger');
+var expect = require('chai').expect;
+var { assert } = require('chai');
+var randomInteger = require('../lib/randomInteger');
 
 describe("randomInteger", function () {
     it("should throw when passed a negative value", function () {
@@ -16,9 +16,9 @@ describe("randomInteger", function () {
     });
 
     it("should return a random number less than the specified maximum and greater than 0", function () {
-        let randomInts = [];
+        var randomInts = [];
 
-        for (let i = 0; i <= 1000; i++) {
+        for (var i = 0; i <= 1000; i++) {
             randomInts.push(randomInteger(16));
         }
         randomInts.forEach(e => {
